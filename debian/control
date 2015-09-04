@@ -1,0 +1,16 @@
+Source: olimex-pinguino32-micro
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: olimex-pinguino32-micro
+Section: boards
+Architecture: all
+XBSC-Group: Olimex
+Depends: chipkit
+Description: Olimex Pinguino32 Micro
+
+
+
