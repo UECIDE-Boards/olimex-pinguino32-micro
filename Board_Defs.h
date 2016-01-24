@@ -127,7 +127,7 @@
 #define	NUM_I2C_PORTS		1
 
 #define 	NUM_DSPI_PORTS		1
-#define 	NUM_DTWI_PORTS		0
+#define 	NUM_DTWI_PORTS		2
 
 /* Define I/O devices on the board.
 */
@@ -438,21 +438,25 @@ extern const uint8_t	analog_pin_to_channel_PGM[];
 **		DTWI0 is on A4/A5 (see above comment).
 **		DTWI1 is on digital pins 38 & 39.
 */
-#define	_DTWI0_BASE	_I2C1_BASE_ADDRESS
+#define	_DTWI0_BASE	    _I2C1_BASE_ADDRESS
 #define	_DTWI0_BUS_IRQ	_I2C1_BUS_IRQ
 #define	_DTWI0_SLV_IRQ	_I2C1_SLAVE_IRQ
 #define	_DTWI0_MST_IRQ	_I2C1_MASTER_IRQ
 #define	_DTWI0_VECTOR	_I2C_1_VECTOR
 #define	_DTWI0_IPL		_I2C1_IPL_IPC
 #define	_DTWI0_SPL		_I2C1_SPL_IPC
+#define _DTWI0_SCL_PIN  45
+#define _DTWI0_SDA_PIN  46
 
-#define	_DTWI1_BASE	_I2C2_BASE_ADDRESS
+#define	_DTWI1_BASE	    _I2C2_BASE_ADDRESS
 #define	_DTWI1_BUS_IRQ	_I2C2_BUS_IRQ
 #define	_DTWI1_SLV_IRQ	_I2C2_SLAVE_IRQ
 #define	_DTWI1_MST_IRQ	_I2C2_MASTER_IRQ
 #define	_DTWI1_VECTOR	_I2C_2_VECTOR
 #define	_DTWI1_IPL		_I2C2_IPL_IPC
 #define	_DTWI1_SPL		_I2C2_SPL_IPC
+#define _DTWI1_SCL_PIN  43
+#define _DTWI1_SDA_PIN  44
 
 /* ------------------------------------------------------------ */
 /*					A/D Converter Declarations					*/
