@@ -1,5 +1,6 @@
 Source: olimex-pinguino32-micro
 Section: libraries
+XBSC-Family: pic32
 Priority: extra
 Maintainer: Matt Jenkins <matt@majenko.co.uk>
 Build-Depends: debhelper (>= 8.0.0)
